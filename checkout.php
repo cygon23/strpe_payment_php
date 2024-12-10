@@ -2,6 +2,10 @@
 
 require __DIR__ . "/vendor/autoload.php";
 
+// $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+// $dotenv->load();
+
+// $stripeSecretKey = $_ENV['STRIPE_SECRET_KEY'];
 $stripe_secret_key = "sk_test_51QCbWNKGU0hfcppgfzGyvTi72KaE7GPndV03lFcjeyZsoel0twHjtA5Ja0nu84IZw1Y9TWaabRPymbfzyHZlmkx100i0eZcD81";
 
 \Stripe\Stripe::setApiKey($stripe_secret_key);
